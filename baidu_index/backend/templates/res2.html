@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>canvas</title>
+		<script type="text/javascript" src="{{ url_for('static', filename='raphael.js') }}"></script>
+{#        <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>#}
+	</head>
+	<body>
+		<span id="baidu-index"></span>
+		<script type="text/javascript">
+            {{ js|safe }}
+		</script>
+	</body>
+</html>
