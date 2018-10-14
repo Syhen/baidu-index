@@ -30,7 +30,12 @@ cd baidu-index/baidu_index/backend
 python index.py
 ```
 
-5. demo
+5. 配置nginx
+配置微服务的nginx，因为splash不能解析localhost
+
+然后将 `baidu_index.core.index.get_res2` 中的域名调整为配置好的域名
+
+6. demo
 ```python
 from __future__ import unicode_literals
 
